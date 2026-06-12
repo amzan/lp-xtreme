@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTREME MEN — Herbal Terbaik untuk Stamina & Vitalitas Pria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: { 900: '#0a0a0a', 800: '#111111', 700: '#1a1a1a', 600: '#222222', 500: '#2a2a2a' },
+                        gold: { 300: '#fcd34d', 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 700: '#b45309' },
+                        herbal: { 500: '#22c55e', 600: '#16a34a', 700: '#15803d' },
+                        danger: { 500: '#ef4444', 600: '#dc2626' }
+                    },
+                    fontFamily: {
+                        heading: ['Oswald', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; overflow-x: hidden; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.6); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes countPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes borderGlow {
+            0%, 100% { border-color: rgba(245, 158, 11, 0.3); }
+            50% { border-color: rgba(245, 158, 11, 0.8); }
+        }
+
+        .animate-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+        .animate-left { opacity: 0; transform: translateX(-40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-left.visible { opacity: 1; transform: translateX(0); }
+        .animate-right { opacity: 0; transform: translateX(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-right.visible { opacity: 1; transform: translateX(0); }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0a 30%, #0a0a0a 60%, #0a1a0a 100%);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fcd34d, #f59e0b, #d97706);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .shimmer-text {
+            background: linear-gradient(90deg, #f59e0b, #fcd34d, #f59e0b, #fcd34d, #f59e0b);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+        .btn-cta {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-cta:hover::before { left: 100%; }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(245, 158, 11, 0.4); }
+
+        .btn-wa {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            transition: all 0.3s ease;
+        }
+        .btn-wa:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(37, 211, 102, 0.3); }
+
+        .btn-shopee {
+            background: linear-gradient(135deg, #ee4d2d, #d73211);
+            transition: all 0.3s ease;
+        }
+        .btn-shopee:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(238, 77, 45, 0.3); }
+
+        .card-dark {
+            background: linear-gradient(145deg, #1a1a1a, #111111);
+            border: 1px solid rgba(245, 158, 11, 0.1);
+            transition: all 0.4s ease;
+        }
+        .card-dark:hover {
+            border-color: rgba(245, 158, 11, 0.4);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 30px rgba(245, 158, 11, 0.1);
+            transform: translateY(-4px);
+        }
+        .symptom-card {
+            background: linear-gradient(145deg, rgba(26,26,26,0.8), rgba(17,17,17,0.8));
+            border: 1px solid rgba(239, 68, 68, 0.15);
+            transition: all 0.3s ease;
+        }
+        .symptom-card:hover {
+            border-color: rgba(239, 68, 68, 0.4);
+            background: linear-gradient(145deg, rgba(40,20,20,0.8), rgba(30,15,15,0.8));
+        }
+        .ingredient-card {
+            background: linear-gradient(145deg, #1a1a1a, #111111);
+            border: 1px solid rgba(34, 197, 94, 0.15);
+            transition: all 0.4s ease;
+        }
+        .ingredient-card:hover {
+            border-color: rgba(34, 197, 94, 0.5);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 30px rgba(34, 197, 94, 0.1);
+            transform: translateY(-4px);
+        }
+        .testimonial-card {
+            background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+            border-left: 3px solid #f59e0b;
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover { border-left-color: #fcd34d; transform: translateX(4px); }
+
+        .divider-gold {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+        }
+        .section-bg-pattern {
+            background-image: radial-gradient(circle at 20% 50%, rgba(245, 158, 11, 0.03) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 50%, rgba(34, 197, 94, 0.03) 0%, transparent 50%);
+        }
+        .countdown-box {
+            background: linear-gradient(145deg, #1a1a1a, #111111);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            animation: borderGlow 2s ease-in-out infinite;
+        }
+        .price-strike { text-decoration: line-through; text-decoration-color: #ef4444; }
+        .floating-wa {
+            position: fixed; bottom: 24px; right: 24px; z-index: 999;
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        .nav-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+
+        .hero-particles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+        .particle {
+            position: absolute; width: 2px; height: 2px; background: #f59e0b;
+            border-radius: 50%; opacity: 0; animation: particleFloat 4s ease-in-out infinite;
+        }
+        @keyframes particleFloat {
+            0% { opacity: 0; transform: translateY(100vh) scale(0); }
+            50% { opacity: 0.6; }
+            100% { opacity: 0; transform: translateY(-10vh) scale(1); }
+        }
+
+        .toast {
+            position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(100px);
+            background: linear-gradient(135deg, #1a1a1a, #111111);
+            border: 1px solid rgba(34, 197, 94, 0.5);
+            padding: 12px 24px; border-radius: 12px; z-index: 9999;
+            opacity: 0; transition: all 0.4s ease; pointer-events: none;
+        }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+        .marquee-container { overflow: hidden; white-space: nowrap; }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+            border-radius: 16px;
+        }
+
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #fbbf24; }
+    </style>
+</head>
+<body>
+
+<div id="toast" class="toast">
+    <p class="text-sm text-herbal-500 font-medium flex items-center gap-2">
+        <iconify-icon icon="lucide:check-circle" width="16"></iconify-icon>
+        <span id="toast-msg">Berhasil!</span>
+    </p>
+</div>
+
+<a href="https://wa.me/6281215687210?text=Halo%20kak%2C%20saya%20mau%20order%20Xtreme%20Men%20dong" target="_blank" class="floating-wa w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-400 transition-all hover:scale-110">
+    <iconify-icon icon="mdi:whatsapp" width="28" class="text-white"></iconify-icon>
+</a>
+
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-blur bg-dark-900/80 border-b border-white/5 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-gradient-to-br from-gold-400 to-gold-700 rounded-lg flex items-center justify-center">
+                <iconify-icon icon="lucide:shield" width="18" class="text-dark-900"></iconify-icon>
+            </div>
+            <span class="font-heading font-bold text-lg tracking-wider text-gold-400">XTREME MEN</span>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm text-neutral-400">
+            <a href="#masalah" class="hover:text-gold-400 transition-colors">Masalah</a>
+            <a href="#solusi" class="hover:text-gold-400 transition-colors">Solusi</a>
+            <a href="#testimoni" class="hover:text-gold-400 transition-colors">Testimoni</a>
+            <a href="#keunggulan" class="hover:text-gold-400 transition-colors">Keunggulan</a>
+            <a href="#order" class="btn-cta px-5 py-2 rounded-full text-dark-900 font-semibold text-xs uppercase tracking-wider">Order Sekarang</a>
+        </div>
+        <button id="mobileMenuBtn" class="md:hidden text-white">
+            <iconify-icon icon="lucide:menu" width="24"></iconify-icon>
+        </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden bg-dark-800/95 border-t border-white/5">
+        <div class="px-6 py-4 flex flex-col gap-4 text-sm">
+            <a href="#masalah" class="text-neutral-300 hover:text-gold-400 transition-colors py-2">Masalah</a>
+            <a href="#solusi" class="text-neutral-300 hover:text-gold-400 transition-colors py-2">Solusi</a>
+            <a href="#testimoni" class="text-neutral-300 hover:text-gold-400 transition-colors py-2">Testimoni</a>
+            <a href="#keunggulan" class="text-neutral-300 hover:text-gold-400 transition-colors py-2">Keunggulan</a>
+            <a href="#order" class="btn-cta px-5 py-3 rounded-full text-dark-900 font-semibold text-xs uppercase tracking-wider text-center">Order Sekarang</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero-gradient relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <div class="hero-particles" id="particles"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-herbal-500/5 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-20 lg:py-0 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-full px-4 py-1.5 mb-6" style="animation: fadeInUp 0.6s ease-out both;">
+                    <span class="w-2 h-2 bg-gold-400 rounded-full animate-pulse"></span>
+                    <span class="text-gold-400 text-xs font-semibold uppercase tracking-widest">Ribuan Pria Sudah Membuktikan</span>
+                </div>
+
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-none mb-2" style="animation: fadeInUp 0.8s ease-out 0.1s both;">
+                    <span class="text-white">Stamina</span>
+                </h1>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-none mb-2" style="animation: fadeInUp 0.8s ease-out 0.2s both;">
+                    <span class="gold-gradient-text">Drop?</span>
+                </h1>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold uppercase leading-none mb-6" style="animation: fadeInUp 0.8s ease-out 0.3s both;">
+                    <span class="text-white">Gairah</span> <span class="gold-gradient-text">Menurun?</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-neutral-300 font-light mb-8 max-w-lg" style="animation: fadeInUp 0.8s ease-out 0.4s both;">
+                    Kamu Nggak Sendirian, <span class="text-gold-400 font-medium">Mas.</span>
+                </p>
+
+                <div class="flex flex-wrap gap-4 mb-8" style="animation: fadeInUp 0.8s ease-out 0.5s both;">
+                    <span class="flex items-center gap-2 bg-herbal-500/10 border border-herbal-500/20 rounded-lg px-3 py-2 text-herbal-500 text-sm font-medium">
+                        <iconify-icon icon="lucide:leaf" width="16"></iconify-icon> 100% Alami
+                    </span>
+                    <span class="flex items-center gap-2 bg-gold-500/10 border border-gold-500/20 rounded-lg px-3 py-2 text-gold-400 text-sm font-medium">
+                        <iconify-icon icon="lucide:shield-check" width="16"></iconify-icon> Tanpa BKO
+                    </span>
+                    <span class="flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-lg px-3 py-2 text-blue-400 text-sm font-medium">
+                        <iconify-icon icon="lucide:heart" width="16"></iconify-icon> Aman Jantung
+                    </span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4" style="animation: fadeInUp 0.8s ease-out 0.6s both;">
+                    <a href="#order" class="btn-cta px-8 py-4 rounded-full text-dark-900 font-bold text-sm uppercase tracking-wider text-center flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:zap" width="18"></iconify-icon>
+                        Pesan Sekarang — Rp 80.000
+                    </a>
+                    <a href="#video" class="px-8 py-4 rounded-full border border-white/20 text-white font-medium text-sm uppercase tracking-wider text-center hover:border-gold-400/50 hover:text-gold-400 transition-all flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:play-circle" width="18"></iconify-icon>
+                        Tonton Video
+                    </a>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 flex justify-center" style="animation: fadeInRight 1s ease-out 0.3s both;">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gold-500/10 rounded-full blur-3xl scale-75"></div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/1a6256b5-3707-47f4-a614-67d2a265ebee.jpeg?auth_key=1881061580-80e26cfa7dea49e3b867231e90ab44d2-0-44dc26483ec84a46283ce9ef2f2750db"
+                         alt="XTREME MEN Product"
+                         class="relative w-72 md:w-80 lg:w-96 rounded-2xl shadow-2xl"
+                         style="animation: float 4s ease-in-out infinite;">
+                    <div class="absolute -top-4 -right-4 bg-danger-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg" style="animation: countPulse 2s ease-in-out infinite;">
+                        HEMAT Rp45K
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-dark-700 border border-gold-500/30 text-gold-400 text-xs font-semibold px-4 py-2 rounded-full shadow-lg">
+                        <iconify-icon icon="lucide:package" width="14" class="mr-1"></iconify-icon>
+                        60 Kapsul
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-neutral-500">
+        <span class="text-xs uppercase tracking-widest">Scroll</span>
+        <div class="w-5 h-8 border-2 border-neutral-600 rounded-full flex justify-center pt-1">
+            <div class="w-1 h-2 bg-gold-400 rounded-full animate-bounce"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== VIDEO IKLAN SECTION ===================== -->
+<section id="video" class="py-20 relative section-bg-pattern">
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-10 animate-on-scroll">
+            <span class="inline-block text-gold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/20">
+                <iconify-icon icon="lucide:play-circle" width="14" class="mr-1 align-middle"></iconify-icon>
+                Video Iklan
+            </span>
+            <h2 class="font-heading text-3xl md:text-4xl font-bold uppercase mb-3">
+                <span class="text-white">Lihat</span> <span class="gold-gradient-text">Buktinya</span>
+            </h2>
+            <p class="text-neutral-400 max-w-xl mx-auto">Tonton video ini untuk mengetahui bagaimana XTREME MEN bisa membantu kembalikan stamina dan vitalitasmu.</p>
+        </div>
+
+        <div class="animate-on-scroll">
+            <div class="video-wrapper shadow-2xl shadow-black/50">
+                <iframe 
+                    src="https://www.youtube.com/embed/0tBf-JFgH8I?rel=0&modestbranding=1" 
+                    title="XTREME MEN - Video Iklan"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== MARQUEE (GRATIS ONGKIR DIHAPUS) ===================== -->
+<div class="bg-dark-800 border-y border-white/5 py-4">
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span class="inline-flex items-center gap-6 text-sm text-neutral-500">
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" width="14" class="text-gold-400"></iconify-icon> 4.9/5 Rating</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:users" width="14" class="text-gold-400"></iconify-icon> 5000+ Pria Terbantu</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:shield-check" width="14" class="text-herbal-500"></iconify-icon> Terdaftar BPOM</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:leaf" width="14" class="text-herbal-500"></iconify-icon> 100% Herbal Alami</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" width="14" class="text-gold-400"></iconify-icon> 4.9/5 Rating</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:users" width="14" class="text-gold-400"></iconify-icon> 5000+ Pria Terbantu</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:shield-check" width="14" class="text-herbal-500"></iconify-icon> Terdaftar BPOM</span>
+                <span>•</span>
+                <span class="flex items-center gap-2"><iconify-icon icon="lucide:leaf" width="14" class="text-herbal-500"></iconify-icon> 100% Herbal Alami</span>
+                <span>•</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!-- ===================== MASALAH SECTION ===================== -->
+<section id="masalah" class="py-24 relative section-bg-pattern">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16 animate-on-scroll">
+            <span class="inline-block text-danger-500 text-xs font-bold uppercase tracking-widest mb-4 bg-danger-500/10 px-4 py-1.5 rounded-full border border-danger-500/20">⚠️ Peringatan</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+                <span class="text-white">Apakah Kamu</span> <span class="text-danger-500">Mengalami Ini?</span>
+            </h2>
+            <p class="text-neutral-400 text-lg max-w-2xl mx-auto">Jangan abaikan tanda-tanda ini. Itu bukan sekadar kurang tidur.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.05s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">😓</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Mudah Lelah</h3>
+                        <p class="text-neutral-400 text-sm">Padahal baru bangun tidur, badan sudah terasa lemas tak bertenaga</p>
+                    </div>
+                </div>
+            </div>
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">😤</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Mood Tidak Stabil</h3>
+                        <p class="text-neutral-400 text-sm">Gampang stres, cemas, dan emosi tanpa sebab yang jelas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.15s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">💔</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Gairah Menurun</h3>
+                        <p class="text-neutral-400 text-sm">Gairah seksual yang semakin lama semakin menurun drastis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">💪</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Massa Otot Berkurang</h3>
+                        <p class="text-neutral-400 text-sm">Badan terasa lemas, otot tidak sekuat dulu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.25s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">😴</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Tidur Tak Berkualitas</h3>
+                        <p class="text-neutral-400 text-sm">Tidur sudah cukup, tapi tetap nggak bertenaga saat bangun</p>
+                    </div>
+                </div>
+            </div>
+            <div class="symptom-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.3s;">
+                <div class="flex items-start gap-4">
+                    <span class="text-3xl">🧠</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Susah Fokus</h3>
+                        <p class="text-neutral-400 text-sm">Konsentrasi menurun, sulit berkonsentrasi pada satu hal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="animate-on-scroll">
+            <div class="bg-gradient-to-r from-danger-500/10 via-danger-500/5 to-danger-500/10 border border-danger-500/20 rounded-2xl p-8 md:p-10 text-center max-w-3xl mx-auto">
+                <div class="text-4xl mb-4">⚠️</div>
+                <h3 class="font-heading text-2xl md:text-3xl font-bold text-white uppercase mb-3">
+                    Itu Tanda <span class="text-danger-500">Testosteron</span> Kamu Mulai Turun
+                </h3>
+                <p class="text-neutral-300 leading-relaxed">
+                    Dan kalau dibiarkan... kualitas hidup, hubungan rumah tangga, dan kepercayaan diri kamu bisa ikut <strong class="text-danger-400">terdampak</strong>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-gold"></div>
+
+<!-- ===================== SOLUSI SECTION ===================== -->
+<section id="solusi" class="py-24 relative section-bg-pattern">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-herbal-500/5 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 animate-on-scroll">
+            <span class="inline-block text-herbal-500 text-xs font-bold uppercase tracking-widest mb-4 bg-herbal-500/10 px-4 py-1.5 rounded-full border border-herbal-500/20">🌿 Solusi Alami</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+                <span class="shimmer-text">KENALKAN: XTREME MEN</span>
+            </h2>
+            <p class="text-neutral-400 text-lg max-w-2xl mx-auto">Solusi Herbal Alami untuk Pria yang Ingin Kembali Bertenaga</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div class="animate-left flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-herbal-500/10 rounded-full blur-3xl scale-75"></div>
+                    <img src="https://z-cdn-media.chatglm.cn/files/29d5e8af-521b-4d3d-a98a-3e88a68508bd.jpeg?auth_key=1881061580-59dc8a07e7934d2f93d74aae026d2cae-0-8f0f0c3436517641e5857a6e5686e02a"
+                         alt="XTREME MEN Poster"
+                         class="relative w-full max-w-md rounded-2xl shadow-2xl">
+                </div>
+            </div>
+
+            <div class="animate-right">
+                <p class="text-neutral-400 mb-8 text-lg">Diformulasikan dari dua bahan herbal legendaris:</p>
+
+                <div class="ingredient-card rounded-xl p-6 mb-5">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-herbal-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <iconify-icon icon="lucide:leaf" width="28" class="text-herbal-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold text-herbal-500 uppercase mb-2">🌿 Purwoceng</h3>
+                            <p class="text-neutral-300 text-sm leading-relaxed">Tanaman asli pegunungan Jawa yang terbukti secara tradisional meningkatkan vitalitas dan gairah pria sejak ratusan tahun lalu.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ingredient-card rounded-xl p-6 mb-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-herbal-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <iconify-icon icon="lucide:tree-pine" width="28" class="text-herbal-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold text-herbal-500 uppercase mb-2">🌿 Pasak Bumi</h3>
+                            <p class="text-neutral-300 text-sm leading-relaxed">Herbal populer Asia Tenggara, dikenal luas sebagai "Asian Ginseng" — pendukung testosteron alami pria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <p class="text-gold-400 font-semibold text-sm uppercase tracking-wider mb-3">Keduanya bekerja bersama untuk:</p>
+                    <div class="flex items-center gap-3 text-neutral-300">
+                        <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                        <span>Meningkatkan aliran darah ke organ vital</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-300">
+                        <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                        <span>Merangsang produksi hormon testosteron secara alami</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-300">
+                        <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                        <span>Meningkatkan stamina & energi harian</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-300">
+                        <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                        <span>Membantu meningkatkan volume & pergerakan sperma</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-300">
+                        <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                        <span>Mengurangi stres & kecemasan, mood lebih positif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="animate-on-scroll">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="card-dark rounded-xl p-6 text-center">
+                    <iconify-icon icon="lucide:package" width="32" class="text-gold-400 mb-2"></iconify-icon>
+                    <p class="text-white font-semibold">60 Kapsul</p>
+                    <p class="text-neutral-500 text-xs">1 Bulan Konsumsi</p>
+                </div>
+                <div class="card-dark rounded-xl p-6 text-center">
+                    <iconify-icon icon="lucide:shield-check" width="32" class="text-herbal-500 mb-2"></iconify-icon>
+                    <p class="text-white font-semibold">Produk Jamu</p>
+                    <p class="text-neutral-500 text-xs">Terdaftar Resmi ✔️</p>
+                </div>
+                <div class="card-dark rounded-xl p-6 text-center">
+                    <iconify-icon icon="lucide:leaf" width="32" class="text-herbal-500 mb-2"></iconify-icon>
+                    <p class="text-white font-semibold">100% Alami</p>
+                    <p class="text-neutral-500 text-xs">Tanpa BKO</p>
+                </div>
+                <div class="card-dark rounded-xl p-6 text-center">
+                    <iconify-icon icon="lucide:clock" width="32" class="text-gold-400 mb-2"></iconify-icon>
+                    <p class="text-white font-semibold">3 Hari</p>
+                    <p class="text-neutral-500 text-xs">Efek Mulai Terasa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-gold"></div>
+
+<!-- ===================== TESTIMONI SECTION ===================== -->
+<section id="testimoni" class="py-24 relative">
+    <div class="absolute top-1/3 left-0 w-80 h-80 bg-gold-500/5 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 animate-on-scroll">
+            <span class="inline-block text-gold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/20">💬 Testimoni Asli</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+                <span class="text-white">Mereka Sudah</span> <span class="gold-gradient-text">Merasakan</span>
+            </h2>
+            <p class="text-neutral-400 text-lg">Bukan iklan. Ini chat asli dari pelanggan kami. 📱</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="testimonial-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.05s;">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-gold-500/20 rounded-full flex items-center justify-center">
+                        <iconify-icon icon="lucide:user" width="20" class="text-gold-400"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Abdullah</p>
+                        <p class="text-neutral-500 text-xs">Konsumen rutin Xtreme Men</p>
+                    </div>
+                </div>
+                <p class="text-neutral-400 text-xs mb-3 italic">Penjual: "Konsumsi sampai sekarang, apa yang dirasa mas?"</p>
+                <p class="text-neutral-400 text-sm mb-4">Abdullah menjawab:</p>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Tahan lama"</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Lebih cepat bergairah"</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Ereksi lebih keras"</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Sperma lebih banyak"</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.15s;">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-herbal-500/20 rounded-full flex items-center justify-center">
+                        <iconify-icon icon="lucide:user" width="20" class="text-herbal-500"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Abdurrahman</p>
+                        <p class="text-neutral-500 text-xs">Pengguna & Reseller</p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-dark-700/50 rounded-lg p-4">
+                        <p class="text-neutral-300 text-sm italic leading-relaxed">"Belum dipromosikan, dan Alhamdulillah saya membuktikan sendiri."</p>
+                    </div>
+                    <div class="bg-dark-700/50 rounded-lg p-4">
+                        <p class="text-neutral-300 text-sm italic leading-relaxed">"Share-share saja, insya Allah laris."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card rounded-xl p-6 animate-on-scroll" style="transition-delay: 0.25s;">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center">
+                        <iconify-icon icon="lucide:user" width="20" class="text-blue-400"></iconify-icon>
+                    </div>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Fulan</p>
+                        <p class="text-neutral-500 text-xs">Konsumsi rutin</p>
+                    </div>
+                </div>
+                <p class="text-neutral-400 text-xs mb-3 italic">Ditanya: "So far ga ada efek samping yang dirasakan?"</p>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Alhamdulillah ga ada, aman-aman saja"</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Tidak ada debar-debar, ga ada yang aneh-aneh"</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <iconify-icon icon="lucide:check" width="16" class="text-herbal-500"></iconify-icon>
+                        <span class="text-white text-sm font-medium">"Masih rutin konsumsi"</span>
+                    </div>
+                </div>
+                <div class="mt-4 inline-flex items-center gap-2 bg-herbal-500/10 border border-herbal-500/20 rounded-full px-3 py-1">
+                    <iconify-icon icon="lucide:shield-check" width="12" class="text-herbal-500"></iconify-icon>
+                    <span class="text-herbal-500 text-xs font-medium">Aman & Tanpa Efek Samping</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-gold"></div>
+
+<!-- ===================== KEUNGGULAN SECTION ===================== -->
+<section id="keunggulan" class="py-24 relative section-bg-pattern">
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 animate-on-scroll">
+            <span class="inline-block text-gold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/20">🏆 Kenapa Beda?</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+                <span class="text-white">Kenapa XTREME MEN</span> <span class="gold-gradient-text">Beda?</span>
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="animate-left">
+                <div class="mb-8">
+                    <h3 class="font-heading text-lg font-bold text-danger-500 uppercase tracking-wider mb-5 flex items-center gap-2">
+                        <iconify-icon icon="lucide:x-circle" width="20"></iconify-icon> Bukan Ini
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-danger-500/5 border border-danger-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:x" width="24" class="text-danger-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">BUKAN Viagra</p>
+                                <p class="text-neutral-500 text-sm">Bukan obat kimia instan</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-danger-500/5 border border-danger-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:x" width="24" class="text-danger-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">BUKAN Obat Kimia</p>
+                                <p class="text-neutral-500 text-sm">Tanpa bahan kimia obat (BKO)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-danger-500/5 border border-danger-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:x" width="24" class="text-danger-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">BUKAN Bikin Jantung Berdebar</p>
+                                <p class="text-neutral-500 text-sm">Aman untuk jantung dan tidur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-heading text-lg font-bold text-herbal-500 uppercase tracking-wider mb-5 flex items-center gap-2">
+                        <iconify-icon icon="lucide:check-circle" width="20"></iconify-icon> Tapi Ini
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 bg-herbal-500/5 border border-herbal-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:check" width="24" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">100% Bahan Alami</p>
+                                <p class="text-neutral-500 text-sm">Aman dikonsumsi jangka panjang</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-herbal-500/5 border border-herbal-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:check" width="24" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">Tidak Mengganggu Pola Tidur</p>
+                                <p class="text-neutral-500 text-sm">Tidur tetap nyenyak</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-herbal-500/5 border border-herbal-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:check" width="24" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">Cocok Usia 30–60 Tahun</p>
+                                <p class="text-neutral-500 text-sm">Dirancang khusus pria dewasa</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 bg-herbal-500/5 border border-herbal-500/10 rounded-xl p-4">
+                            <iconify-icon icon="lucide:check" width="24" class="text-herbal-500 flex-shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-white font-semibold">Terdaftar Produk Jamu Resmi</p>
+                                <p class="text-neutral-500 text-sm">Legalitas terjamin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animate-right">
+                <div class="card-dark rounded-2xl p-8 md:p-10">
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 bg-gold-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                            <iconify-icon icon="lucide:alert-triangle" width="40" class="text-gold-400"></iconify-icon>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-white uppercase mb-2">Penting!</h3>
+                        <div class="divider-gold mb-4"></div>
+                    </div>
+
+                    <div class="bg-gold-500/5 border border-gold-500/20 rounded-xl p-6 mb-6">
+                        <p class="text-gold-400 font-bold text-lg mb-2">⚠️ HERBAL INI BUKAN VIAGRA.</p>
+                        <p class="text-neutral-300 leading-relaxed text-sm">
+                            Efek optimal mulai terasa setelah <strong class="text-gold-400">3 hari konsumsi rutin</strong>. Karena herbal bekerja dari dalam — bukan instan, tapi <strong class="text-herbal-400">aman & tahan lama</strong>.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-herbal-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <iconify-icon icon="lucide:clock" width="16" class="text-herbal-500"></iconify-icon>
+                            </div>
+                            <span class="text-neutral-300 text-sm">Hari 1-3: Proses adaptasi tubuh</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-gold-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <iconify-icon icon="lucide:trending-up" width="16" class="text-gold-400"></iconify-icon>
+                            </div>
+                            <span class="text-neutral-300 text-sm">Hari 3-7: Energi & stamina mulai naik</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-gold-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <iconify-icon icon="lucide:flame" width="16" class="text-gold-400"></iconify-icon>
+                            </div>
+                            <span class="text-neutral-300 text-sm">Minggu 2+: Vitalitas optimal terasa penuh</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 bg-herbal-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <iconify-icon icon="lucide:shield" width="16" class="text-herbal-500"></iconify-icon>
+                            </div>
+                            <span class="text-neutral-300 text-sm">Konsumsi rutin = hasil maksimal & tahan lama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="divider-gold"></div>
+
+<!-- ===================== ORDER SECTION (SHOPEE UPDATED, GRATIS ONGKIR DIHAPUS) ===================== -->
+<section id="order" class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-12 animate-on-scroll">
+            <span class="inline-block text-gold-400 text-xs font-bold uppercase tracking-widest mb-4 bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/20">🔥 Penawaran Spesial</span>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold uppercase mb-4">
+                <span class="shimmer-text">PESAN HARI INI</span>
+            </h2>
+            <p class="text-neutral-400 text-lg">Penawaran ini bisa berakhir kapan saja.</p>
+        </div>
+
+        <div class="animate-on-scroll">
+            <div class="card-dark rounded-2xl overflow-hidden" style="animation: borderGlow 3s ease-in-out infinite;">
+                <div class="bg-gradient-to-r from-gold-600 to-gold-500 py-3 text-center">
+                    <p class="text-dark-900 font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:zap" width="16"></iconify-icon>
+                        Penawaran Spesial Hari Ini
+                        <iconify-icon icon="lucide:zap" width="16"></iconify-icon>
+                    </p>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <img src="https://z-cdn-media.chatglm.cn/files/1a6256b5-3707-47f4-a614-67d2a265ebee.jpeg?auth_key=1881061580-80e26cfa7dea49e3b867231e90ab44d2-0-44dc26483ec84a46283ce9ef2f2750db"
+                                 alt="XTREME MEN"
+                                 class="w-48 md:w-56 rounded-xl shadow-lg">
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="font-heading text-2xl font-bold text-white uppercase mb-1">Xtreme Men</h3>
+                            <p class="text-neutral-400 text-sm mb-4">60 Kapsul — 1 Bulan Konsumsi Rutin</p>
+
+                            <div class="mb-6">
+                                <p class="text-neutral-500 text-sm mb-1">Harga Normal:</p>
+                                <p class="text-2xl text-neutral-500 price-strike mb-2">Rp 125.000</p>
+                                <p class="text-neutral-400 text-sm mb-1">Harga Spesial Hari Ini:</p>
+                                <p class="text-5xl md:text-6xl font-heading font-bold gold-gradient-text">Rp 80.000</p>
+                                <p class="text-herbal-500 text-sm font-semibold mt-2 flex items-center justify-center md:justify-start gap-1">
+                                    <iconify-icon icon="lucide:arrow-down" width="14"></iconify-icon>
+                                    Hemat Rp 45.000!
+                                </p>
+                            </div>
+
+                            <div class="space-y-3 mb-8">
+                                <div class="flex items-center gap-3 justify-center md:justify-start">
+                                    <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500"></iconify-icon>
+                                    <span class="text-neutral-300 text-sm">✅ 60 Kapsul — Cukup untuk 1 Bulan</span>
+                                </div>
+                                <div class="flex items-center gap-3 justify-center md:justify-start">
+                                    <iconify-icon icon="lucide:check-circle" width="18" class="text-herbal-500"></iconify-icon>
+                                    <span class="text-neutral-300 text-sm">✅ Dijamin Asli & Resmi</span>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://wa.me/6281215687210?text=Halo%20kak%2C%20saya%20mau%20order%20Xtreme%20Men%20dong" target="_blank" class="btn-wa px-8 py-4 rounded-full text-white font-bold text-sm uppercase tracking-wider text-center flex items-center justify-center gap-2 flex-1">
+                                    <iconify-icon icon="mdi:whatsapp" width="20"></iconify-icon>
+                                    Order via WhatsApp
+                                </a>
+                                <a href="https://s.shopee.co.id/1qZaC0JLHy" target="_blank" class="btn-shopee px-8 py-4 rounded-full text-white font-bold text-sm uppercase tracking-wider text-center flex items-center justify-center gap-2 flex-1">
+                                    <iconify-icon icon="mdi:shopping" width="20"></iconify-icon>
+                                    Beli di Shopee
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-700/50 border-t border-white/5 p-6">
+                    <div class="text-center">
+                        <p class="text-neutral-400 text-sm mb-4 flex items-center justify-center gap-2">
+                            <iconify-icon icon="lucide:clock" width="16" class="text-danger-400"></iconify-icon>
+                            Penawaran berakhir dalam:
+                        </p>
+                        <div class="flex items-center justify-center gap-4">
+                            <div class="countdown-box rounded-xl px-4 py-3 text-center min-w-[70px]">
+                                <p class="text-2xl font-heading font-bold text-gold-400" id="hours">05</p>
+                                <p class="text-neutral-500 text-xs uppercase">Jam</p>
+                            </div>
+                            <span class="text-gold-400 text-2xl font-bold">:</span>
+                            <div class="countdown-box rounded-xl px-4 py-3 text-center min-w-[70px]">
+                                <p class="text-2xl font-heading font-bold text-gold-400" id="minutes">47</p>
+                                <p class="text-neutral-500 text-xs uppercase">Menit</p>
+                            </div>
+                            <span class="text-gold-400 text-2xl font-bold">:</span>
+                            <div class="countdown-box rounded-xl px-4 py-3 text-center min-w-[70px]">
+                                <p class="text-2xl font-heading font-bold text-danger-400" id="seconds">32</p>
+                                <p class="text-neutral-500 text-xs uppercase">Detik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="animate-on-scroll mt-8 text-center">
+            <p class="text-neutral-400 text-sm">
+                ⏳ Jangan sampai kamu menyesal karena menunda. Ribuan pria sudah membuktikan — <strong class="text-gold-400">sekarang giliran kamu</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-800 to-dark-900"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/3 rounded-full blur-3xl"></div>
+
+    <div class="max-w-3xl mx-auto px-6 text-center relative z-10 animate-on-scroll">
+        <h2 class="font-heading text-4xl md:text-6xl font-bold uppercase mb-4 leading-tight">
+            <span class="text-white">Jadilah</span> <span class="gold-gradient-text">Pria Sejati.</span>
+        </h2>
+        <p class="font-heading text-2xl md:text-3xl font-semibold text-neutral-300 uppercase tracking-wide mb-8">
+            Kuat. Berenergi. Dan Percaya Diri.
+        </p>
+        <p class="text-neutral-400 text-lg mb-10 max-w-xl mx-auto">
+            Mulai perjalanan perubahanmu hari ini. Ribuan pria sudah membuktikan — sekarang giliran kamu.
+        </p>
+
+        <a href="https://wa.me/6281215687210?text=Halo%20kak%2C%20saya%20mau%20order%20Xtreme%20Men%20dong" target="_blank"
+           class="btn-cta inline-flex items-center gap-3 px-12 py-5 rounded-full text-dark-900 font-bold text-base uppercase tracking-wider"
+           style="animation: pulse-glow 2s ease-in-out infinite;">
+            <iconify-icon icon="mdi:whatsapp" width="24"></iconify-icon>
+            Hubungi Kami via WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- ===================== FOOTER (SHOPEE UPDATED) ===================== -->
+<footer class="bg-dark-800 border-t border-white/5 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-gradient-to-br from-gold-400 to-gold-700 rounded-lg flex items-center justify-center">
+                        <iconify-icon icon="lucide:shield" width="18" class="text-dark-900"></iconify-icon>
+                    </div>
+                    <span class="font-heading font-bold text-lg tracking-wider text-gold-400">XTREME MEN</span>
+                </div>
+                <p class="text-neutral-500 text-sm leading-relaxed">Herbal Terbaik untuk Stamina & Vitalitas Pria Dewasa. 100% Bahan Alami, Tanpa BKO.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Navigasi</h4>
+                <div class="space-y-2">
+                    <a href="#masalah" class="block text-neutral-500 text-sm hover:text-gold-400 transition-colors">Masalah</a>
+                    <a href="#solusi" class="block text-neutral-500 text-sm hover:text-gold-400 transition-colors">Solusi</a>
+                    <a href="#testimoni" class="block text-neutral-500 text-sm hover:text-gold-400 transition-colors">Testimoni</a>
+                    <a href="#keunggulan" class="block text-neutral-500 text-sm hover:text-gold-400 transition-colors">Keunggulan</a>
+                    <a href="#order" class="block text-neutral-500 text-sm hover:text-gold-400 transition-colors">Order</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Hubungi Kami</h4>
+                <div class="space-y-3">
+                    <a href="https://wa.me/6281215687210" target="_blank" class="flex items-center gap-2 text-neutral-500 text-sm hover:text-herbal-500 transition-colors">
+                        <iconify-icon icon="mdi:whatsapp" width="18"></iconify-icon> WhatsApp
+                    </a>
+                    <a href="https://s.shopee.co.id/1qZaC0JLHy" target="_blank" class="flex items-center gap-2 text-neutral-500 text-sm hover:text-danger-500 transition-colors">
+                        <iconify-icon icon="mdi:shopping" width="18"></iconify-icon> Shopee
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/5 pt-8">
+            <div class="bg-dark-700/30 border border-white/5 rounded-xl p-4 mb-6">
+                <p class="text-neutral-600 text-xs leading-relaxed text-center">
+                    *Produk ini adalah suplemen herbal jamu. Bukan obat dan tidak dimaksudkan untuk mengobati penyakit. Hasil dapat berbeda pada setiap individu.
+                </p>
+            </div>
+            <p class="text-neutral-600 text-xs text-center">
+                © 2025 XTREME MEN. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    mobileMenuBtn.addEventListener('click', () => {
+        menuOpen = !menuOpen;
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuBtn.innerHTML = menuOpen
+            ? '<iconify-icon icon="lucide:x" width="24"></iconify-icon>'
+            : '<iconify-icon icon="lucide:menu" width="24"></iconify-icon>';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuOpen = false;
+            mobileMenuBtn.innerHTML = '<iconify-icon icon="lucide:menu" width="24"></iconify-icon>';
+        });
+    });
+
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right').forEach(el => {
+        observer.observe(el);
+    });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('bg-dark-900/95');
+            navbar.classList.remove('bg-dark-900/80');
+        } else {
+            navbar.classList.remove('bg-dark-900/95');
+            navbar.classList.add('bg-dark-900/80');
+        }
+    });
+
+    let totalSeconds = 5 * 3600 + 47 * 60 + 32;
+    function updateCountdown() {
+        if (totalSeconds <= 0) {
+            totalSeconds = 5 * 3600 + 47 * 60 + 32;
+        }
+        const h = Math.floor(totalSeconds / 3600);
+        const m = Math.floor((totalSeconds % 3600) / 60);
+        const s = totalSeconds % 60;
+        document.getElementById('hours').textContent = String(h).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+        totalSeconds--;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 4 + 's';
+        particle.style.animationDuration = (3 + Math.random() * 3) + 's';
+        particlesContainer.appendChild(particle);
+    }
+
+    function showToast(msg) {
+        const toast = document.getElementById('toast');
+        const toastMsg = document.getElementById('toast-msg');
+        toastMsg.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                const offset = 80;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = target.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
+                window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+        });
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute('id');
+            }
+        });
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.classList.remove('text-gold-400');
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('text-gold-400');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
